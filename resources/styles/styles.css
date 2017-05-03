@@ -41,3 +41,7 @@ img {
   font-size: 6em;
   font-family: 'Righteous', cursive;
 }
+
+#myModal > div > div > div.modal-body > new-keg > button {
+  margin-top: 10px;
+}

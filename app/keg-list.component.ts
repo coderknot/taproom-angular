@@ -24,8 +24,8 @@ import { Keg } from './keg.model';
               <div><strong>price per pint:</strong> $ {{currentKeg.price}}</div>
               <div><strong>alcohol content:</strong> {{currentKeg.alcoholContent}} %</div> <div>({{currentKeg.pints}} pints remaining)</div>
               <div class="buttonRow">
-                <button class="btn-primary"(click)="pintButtonHasbeenClicked(currentKeg)">Pint Sold!</button>
-                <button class="btn-success" (click)="editButtonHasbeenClicked(currentKeg)">Edit Keg!</button>
+                <button class="btn btn-default"(click)="pintButtonHasbeenClicked(currentKeg)">Pint Sold!</button>
+                <button class="btn btn-default" (click)="editButtonHasbeenClicked(currentKeg)">Edit Keg!</button>
               </div>
             </div>
         </div>
