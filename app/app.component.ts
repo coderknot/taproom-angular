@@ -4,7 +4,7 @@ import { Keg } from './keg.model';
 @Component({
   selector: 'app-root',
   template: `
-  <div class="jumbotron"><h1>Portland Tap Room</h1></div>
+  <div class="jumbotron"><h1>Righteous Taps</h1></div>
   <div class="container">
       <keg-list [childKegList]="masterKegList" (clickSender)="editKeg($event)" (pintSender)="pintSold($event)"></keg-list>
       <edit-keg [childSelectedKeg]="selectedKeg" (doneButtonClickedSender)="finishedEditing()"></edit-keg>
