@@ -7,8 +7,9 @@ import { Keg } from './keg.model';
   template: `
     <ul>
         <li *ngFor="let currentKeg of childKegList"><strong>Name:</strong> {{currentKeg.name}},<strong>type of beer:</strong> {{currentKeg.type}}, $ {{currentKeg.price}}, <strong>alcohol content:</strong> {{currentKeg.alcoholContent}} ({{currentKeg.pints}} pints remaining)
-        <button (click)="editButtonHasbeenClicked(currentKeg)">Edit Keg!</button>
         <button (click)="pintButtonHasbeenClicked(currentKeg)">Pint Sold!</button>
+        <button (click)="editButtonHasbeenClicked(currentKeg)">Edit Keg!</button>
+
       </li>
     </ul>
   `
