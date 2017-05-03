@@ -34,6 +34,13 @@ export class AppComponent {
   }
 
   pintSold(pintSold: Keg) {
-    pintSold.pints -= 1;
+    if(pintSold.pints > 0) {
+      if(pintSold.pints <= 10) {
+        alert("You need to tap a new keg yo!");
+      }
+      pintSold.pints -= 1;
+    }
   }
+
+
 }
