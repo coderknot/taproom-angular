@@ -1,0 +1,43 @@
+.panel {
+  height: 300px;
+}
+.selectMenu {
+ margin: 10px 10px 10px 0;
+}
+.panel-heading {
+  height: 130px;
+  padding: 0;
+}
+
+.panel-body h4 {
+  margin: 0;
+}
+.panel-body {
+  border: 1px solid #333;
+}
+.buttonRow button {
+  margin: 10px 0 0 0;
+}
+img {
+  width: 260.5px;
+  height: 130px;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #333;
+  border-bottom: 0;
+}
+
+.jumbotron {
+  background-image: url("../../img/headerImg.jpeg");
+  height: 467px;
+  background-position-y: -48px;
+  background-size: cover;
+  text-align: center
+}
+
+.jumbotron h1 {
+  color: #fbf8f2;
+  text-shadow: 2px 11px 11px #000000;
+  font-size: 6em;
+  font-family: 'Righteous', cursive;
+}
