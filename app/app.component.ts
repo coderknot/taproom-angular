@@ -6,7 +6,8 @@ import { Keg } from './keg.model';
   template: `
   <div class="container">
       <h1>Portland Tap Room</h1>
-      <keg-list [childKegList]="masterKegList"></keg-list>
+      <keg-list [childKegList]="masterKegList" (clickSender)="editKeg($event)"></keg-list>
+      <edit-keg [childSelectedKeg]="selectedKeg" (doneButtonClickedSender)="finishedEditing()"></edit-keg>
       <hr>
       <new-keg (newKegSender)="addKeg($event)"></new-keg>
   </div>
@@ -18,9 +19,17 @@ export class AppComponent {
     new Keg("Mike Saw Sasquatch", "Blonde Ale", 5, 5),
     new Keg("API", "American IPA", 7, 6)
   ];
+  selectedKeg = null;
 
   addKeg(newKegFromChild: Keg) {
     this.masterKegList.push(newKegFromChild);
   }
 
+  editKeg(selectedKegFromList) {
+    this.selectedKeg = selectedKegFromList;
+  }
+
+  finishedEditing() {
+    this.selectedKeg = null;
+  }
 }
